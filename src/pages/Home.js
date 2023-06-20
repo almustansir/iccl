@@ -2,6 +2,7 @@ import React from "react";
 import NavBarComp from "../components/NavBarComp";
 import styled from "styled-components";
 import homeHeroBg from "./../static/homeHeroBg.jpg";
+import HomeStatsComp from "../components/HomeStatsComp";
 
 const HomeDiv = styled.div`
   margin: 0;
@@ -23,8 +24,6 @@ const HeroDiv = styled.div`
 const HomeH2 = styled.h2`
   position: absolute;
   left: 10%;
-  /* right: -3.3%; */
-  /* top: 0%; */
   bottom: 35%;
 
   font-family: "Pacifico";
@@ -64,6 +63,7 @@ const Home = () => {
           services.
         </HomeP>
       </HeroDiv>
+      <HomeStatsComp />
     </HomeDiv>
   );
 };
