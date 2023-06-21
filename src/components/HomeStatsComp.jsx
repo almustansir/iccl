@@ -20,8 +20,8 @@ const StatisticsHeader = styled.h2`
 `;
 const StatisticsSection = styled.div`
   display: flex;
-  justify-content: space-between;
-  margin: 0 20% 0 20%;
+  justify-content: center;
+  gap: 220px;
 `;
 
 const StatisticsSection1 = styled.div``;
