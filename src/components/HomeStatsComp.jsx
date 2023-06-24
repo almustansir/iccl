@@ -46,7 +46,9 @@ const StatisticsSection1Subtitle = styled.h5`
 const StatisticsSection2 = styled.div`
   width: 240px;
 `;
-const StatisticsSection2Info = styled.div``;
+const StatisticsSection2Info = styled.div`
+  margin-top: -190px;
+`;
 const StatisticsSection2InfoHeading = styled.h3`
   font-family: "Roboto";
   font-style: normal;
@@ -111,14 +113,27 @@ const HomeStatsComp = () => {
             </StatisticsSection1>
             <StatisticsSection2>
                 <PieChart
-                    style={{
+                  animate
+                  animationDuration={1000}
+                  animationEasing="ease-out"
+                  center={[50, 50]}
+                  style={{
                     width: "240px",
                     height: "240px",
-                }}
-                data={[
+                  }}
+                  data={[
                     { title: "Women", value: 60, color: "#9747ff" },
                     { title: "Men", value: 40, color: "#2f58cd" },
-                ]}
+                  ]}
+
+                  labelPosition={50}
+                  lengthAngle={360}
+                  lineWidth={25}
+                  paddingAngle={0}
+                  radius={50}
+                  rounded
+                  startAngle={0}
+                  viewBoxSize={[100, 100]}
                 />
                 <StatisticsSection2Label>
                     <StatisticsSection2LabelWomen>

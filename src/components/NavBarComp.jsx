@@ -28,9 +28,9 @@ const NavUi = styled.ul`
 `
 
 const NavLinkExt = styled.span`
-      &:hover {
-    background-color: #f1f8fd7e;
-  }
+    &:hover {
+        background-color: #f1f8fd7e;
+    }
 `
 
 const NavBarComp = () => {

@@ -91,7 +91,8 @@ const CarouselDiv1 = styled.div`
 const CarouselDiv2 = styled.div`
   display: flex;
   flex-direction: row;
-  margin-left: -1260px;
+  margin-left: {
+  }
 `;
 
 const CarouselDiv3 = styled.div`
