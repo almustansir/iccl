@@ -27,6 +27,12 @@ const NavUi = styled.ul`
     font-family: 'Roboto', sans-serif;
 `
 
+const NavLinkExt = styled.span`
+      &:hover {
+    background-color: #f1f8fd7e;
+  }
+`
+
 const NavBarComp = () => {
 
     const navlinkStyle = ({ isActive }) => {
@@ -44,12 +50,12 @@ const NavBarComp = () => {
     <NavBar>
         <NavLogo>ICCL</NavLogo>
         <NavUi>
-            <NavLink style={navlinkStyle} to="/">Home</NavLink>
-            <NavLink style={navlinkStyle} to="/aboutus">About Us</NavLink>
-            <NavLink style={navlinkStyle} to="/csr">CSR</NavLink>
-            <NavLink style={navlinkStyle} to="/partners">Partners</NavLink>
-            <NavLink style={navlinkStyle} to="/gallery">Gallery</NavLink>
-            <NavLink style={navlinkStyle} to="/contact">Contact</NavLink>
+            <NavLinkExt><NavLink style={navlinkStyle} to="/">Home</NavLink></NavLinkExt>
+            <NavLinkExt><NavLink style={navlinkStyle} to="/aboutus">About Us</NavLink></NavLinkExt>
+            <NavLinkExt><NavLink style={navlinkStyle} to="/csr">CSR</NavLink></NavLinkExt>
+            <NavLinkExt><NavLink style={navlinkStyle} to="/partners">Partners</NavLink></NavLinkExt>
+            <NavLinkExt><NavLink style={navlinkStyle} to="/gallery">Gallery</NavLink></NavLinkExt>
+            <NavLinkExt><NavLink style={navlinkStyle} to="/contact">Contact</NavLink></NavLinkExt>
         </NavUi>
     </NavBar>
   )

@@ -77,16 +77,21 @@ const NewProductsHeader = styled.h2`
 const CarouselDiv = styled.div`
   display: flex;
   flex-direction: row;
+  width: 1260px;
+  overflow: hidden;
+  margin: auto;
 `;
 
 const CarouselDiv1 = styled.div`
   display: flex;
   flex-direction: row;
+  margin-left: -1260px;
 `;
 
 const CarouselDiv2 = styled.div`
   display: flex;
   flex-direction: row;
+  margin-left: -1260px;
 `;
 
 const CarouselDiv3 = styled.div`
